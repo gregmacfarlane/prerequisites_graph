@@ -54,6 +54,7 @@ ui <- fluidPage(
         ),
         selected = "25-26"
       ),
+      uiOutput("requirement_panel"),
       selectInput(
         inputId = "layout",
         label = "Layout",
@@ -81,6 +82,47 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  output$requirement_panel <- renderUI({
+    current_graph <- read_graph(input$program_year)
+    capstone_nodes <- current_graph$nodes[current_graph$nodes$group == "CAPSTONE", , drop = FALSE]
+
+    capstone_ids <- capstone_nodes$id
+    capstone_predecessors <- unique(
+      current_graph$edges$to[
+        current_graph$edges$from %in% capstone_ids &
+          current_graph$edges$to %in% capstone_ids
+      ]
+    )
+    starting_capstone_ids <- setdiff(capstone_ids, capstone_predecessors)
+    starting_capstones <- capstone_nodes$label[
+      match(starting_capstone_ids, capstone_nodes$id)
+    ]
+
+    requirement <- if (length(starting_capstones) > 0) {
+      requirement_text <- if (input$program_year == "26-27") {
+        "12 hours of CE Breadth and one CE Design class must be completed before starting "
+      } else {
+        "12 hours of CE Breadth must be completed before starting "
+      }
+
+      paste0(
+        "For the ", input$program_year, " program, ",
+        requirement_text,
+        paste(starting_capstones, collapse = " or "), "."
+      )
+    } else {
+      paste0(
+        "For the ", input$program_year,
+        " program, 12 hours of CE Breadth must be completed before starting Capstone."
+      )
+    }
+
+    wellPanel(
+      h4("Capstone requirement"),
+      p(requirement)
+    )
+  })
+
   output$network <- renderVisNetwork({
     current_graph <- read_graph(input$program_year)
     nodes <- current_graph$nodes
