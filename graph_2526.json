@@ -57,10 +57,10 @@
     {"from": "CCE_203", "to": "CE_321", "dashed": false},
 
     {"from": "CCE_270", "to": "CE_331", "dashed": false},
-    {"from": "CCE_232", "to": "CE_331", "dashed": false},
+    {"from": "CE_232", "to": "CE_331", "dashed": false},
 
     {"from": "CCE_270", "to": "CE_341", "dashed": false},
-    {"from": "CCE_232", "to": "CE_341", "dashed": false},
+    {"from": "CE_232", "to": "CE_341", "dashed": false},
     {"from": "CCE_203", "to": "CE_341", "dashed": false},
 
     {"from": "CCE_270", "to": "CE_351", "dashed": false},
