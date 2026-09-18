@@ -1,5 +1,6 @@
 {
   "nodes": [
+    { "id": "WRTG_150", "label": "WRTG 150", "title": "WRTG 150", "group": "WRTG", "level": 1 },
     { "id": "MATH_112", "label": "MATH 112", "title": "MATH 112", "group": "MATH", "level": 1 },
     { "id": "MATH_113", "label": "MATH 113", "title": "MATH 113", "group": "MATH", "level": 1 },
     { "id": "MATH_213", "label": "MATH 213", "title": "MATH 213", "group": "MATH", "level": 2 },
@@ -26,9 +27,8 @@
     { "id": "CE_424", "label": "CE 424", "title": "CE 424", "group": "DESIGN", "level": 4 },
     { "id": "CE_433", "label": "CE 433", "title": "CE 433", "group": "DESIGN", "level": 4 },
     { "id": "CE_442", "label": "CE 442", "title": "CE 442", "group": "DESIGN", "level": 4 },
-    { "id": "CE_451", "label": "CE 451", "title": "CE 451", "group": "DESIGN", "level": 4 },
+    { "id": "CE_453", "label": "CE 453", "title": "CE 453", "group": "DESIGN", "level": 4 },
     { "id": "CE_461", "label": "CE 461", "title": "CE 461", "group": "DESIGN", "level": 4 },
-    { "id": "CE_471", "label": "CE 471", "title": "CE 471", "group": "CAPSTONE", "level": 4 },
     { "id": "CE_472", "label": "CE 472", "title": "CE 472", "group": "CAPSTONE", "level": 4 }
   ],
   "edges": [
@@ -46,27 +46,38 @@
     {"from": "CCE_112_113_114", "to": "CCE_270", "dashed": false},
     {"from": "CCE_102", "to": "CCE_270", "dashed": false},
 
+    {"from": "WRTG_150", "to": "CE_271", "dashed": false},
+
+
+
     {"from": "CCE_270", "to": "CCE_304", "dashed": false},
+    {"from": "CE_271", "to": "CCE_304", "dashed": false},
     {"from": "STAT_121", "to": "CCE_304", "dashed": false},
     {"from": "CCE_203", "to": "CCE_304", "dashed": false},
 
+    {"from": "CE_271", "to": "CCE_306", "dashed": false},
     {"from": "CCE_270", "to": "CCE_306", "dashed": false},
     {"from": "STAT_121", "to": "CCE_306", "dashed": false},
     {"from": "CCE_203", "to": "CCE_306", "dashed": false},
 
+    {"from": "CE_271", "to": "CE_321", "dashed": false},
     {"from": "CCE_270", "to": "CE_321", "dashed": false},
     {"from": "CCE_203", "to": "CE_321", "dashed": false},
 
+    {"from": "CE_271", "to": "CE_321", "dashed": false},
     {"from": "CCE_270", "to": "CE_331", "dashed": false},
     {"from": "CCE_232", "to": "CE_331", "dashed": false},
 
+    {"from": "CE_271", "to": "CE_341", "dashed": false},
     {"from": "CCE_270", "to": "CE_341", "dashed": false},
     {"from": "CCE_232", "to": "CE_341", "dashed": false},
     {"from": "CCE_203", "to": "CE_341", "dashed": false},
 
+    {"from": "CE_271", "to": "CE_351", "dashed": false},
     {"from": "CCE_270", "to": "CE_351", "dashed": false},
     {"from": "CHEM_105", "to": "CE_351", "dashed": false},
 
+    {"from": "CE_271", "to": "CE_361", "dashed": false},
     {"from": "CCE_270", "to": "CE_361", "dashed": false},
     {"from": "STAT_121", "to": "CE_361", "dashed": false},
 
@@ -103,6 +114,7 @@
 
   ],
   "legend": [
+    { "group": "WRTG", "label": "Writing GE", "color": "rgba(137, 172, 151, 0.98)" },
     { "group": "MATH", "label": "Mathematics", "color": "#4E79A7" },
     { "group": "SCIENCE", "label": "Science and statistics", "color": "#59A14F" },
     { "group": "CCE", "label": "CCE Foundations", "color": "#B07AA1" },
