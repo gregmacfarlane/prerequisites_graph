@@ -22,4 +22,4 @@ edges <- data.frame(
 )
 
 # Create the network
-visNetwork(nodes, edges) %>% visHierarchicalLayout(direction = "LR")
+visNetwork(nodes, edges) 
