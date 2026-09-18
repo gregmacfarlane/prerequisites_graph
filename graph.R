@@ -10,7 +10,8 @@ nodes <- data.frame(
   id = graph$nodes$id,
   label = graph$nodes$label,
   title = graph$nodes$title,
-  group = graph$nodes$group
+  group = graph$nodes$group,
+  level = graph$nodes$level
 )
 
 # Create the edges
