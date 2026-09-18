@@ -3,40 +3,57 @@ library(visNetwork)
 library(jsonlite)
 
 
-# Read the graph data and legend from JSON.
-graph <- fromJSON("graph.json")
-legend <- graph$legend
-
-nodes <- data.frame(
-  id = graph$nodes$id,
-  label = graph$nodes$label,
-  title = graph$nodes$title,
-  group = graph$nodes$group,
-  level = graph$nodes$level,
-  stringsAsFactors = FALSE
+graph_files <- c(
+  "25-26" = "graph_2526.json",
+  "26-27" = "graph_2627.json"
 )
 
-edges <- data.frame(
-  from = graph$edges$from,
-  to = graph$edges$to,
-  arrows = "to",
-  dashes = graph$edges$dashed,
-  stringsAsFactors = FALSE
-)
+read_graph <- function(program_year) {
+  graph <- fromJSON(graph_files[[program_year]])
+  legend <- graph$legend
 
-legend_nodes <- data.frame(
-  id = paste0("legend_", legend$group),
-  label = legend$label,
-  title = paste0(legend$label, " (", legend$group, ")"),
-  shape = "dot",
-  color = legend$color,
-  stringsAsFactors = FALSE
-)
+  nodes <- data.frame(
+    id = graph$nodes$id,
+    label = graph$nodes$label,
+    title = graph$nodes$title,
+    group = graph$nodes$group,
+    level = graph$nodes$level,
+    stringsAsFactors = FALSE
+  )
+
+  edges <- data.frame(
+    from = graph$edges$from,
+    to = graph$edges$to,
+    arrows = "to",
+    dashes = graph$edges$dashed,
+    stringsAsFactors = FALSE
+  )
+
+  legend_nodes <- data.frame(
+    id = paste0("legend_", legend$group),
+    label = legend$label,
+    title = paste0(legend$label, " (", legend$group, ")"),
+    shape = "dot",
+    color = legend$color,
+    stringsAsFactors = FALSE
+  )
+
+  list(nodes = nodes, edges = edges, legend = legend, legend_nodes = legend_nodes)
+}
 
 ui <- fluidPage(
   titlePanel("Course prerequisite graph"),
   sidebarLayout(
     sidebarPanel(
+      selectInput(
+        inputId = "program_year",
+        label = "Program version",
+        choices = c(
+          "2025-2026" = "25-26",
+          "2026-2027" = "26-27"
+        ),
+        selected = "25-26"
+      ),
       selectInput(
         inputId = "layout",
         label = "Layout",
@@ -65,6 +82,12 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   output$network <- renderVisNetwork({
+    current_graph <- read_graph(input$program_year)
+    nodes <- current_graph$nodes
+    edges <- current_graph$edges
+    legend <- current_graph$legend
+    legend_nodes <- current_graph$legend_nodes
+
     network <- visNetwork(
       nodes,
       edges,

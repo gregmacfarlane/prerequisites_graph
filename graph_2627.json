@@ -80,7 +80,7 @@
 
     {"from": "CE_341", "to": "CE_442", "dashed": false},
 
-    {"from": "CHEM_105", "to": "CE_451", "dashed": false},
+    {"from": "CE_351", "to": "CE_453", "dashed": false},
 
     {"from": "CE_361", "to": "CE_461", "dashed": false},
 
@@ -96,7 +96,7 @@
     {"from": "CE_424", "to": "CE_472", "dashed": true},
     {"from": "CE_433", "to": "CE_472", "dashed": true},
     {"from": "CE_442", "to": "CE_472", "dashed": true},
-    {"from": "CE_451", "to": "CE_472", "dashed": true},
+    {"from": "CE_453", "to": "CE_472", "dashed": true},
     {"from": "CE_461", "to": "CE_472", "dashed": true}
 
 

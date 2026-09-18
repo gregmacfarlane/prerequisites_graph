@@ -25,7 +25,7 @@
     { "id": "CE_424", "label": "CE 424", "title": "CE 424", "group": "DESIGN", "level": 4 },
     { "id": "CE_433", "label": "CE 433", "title": "CE 433", "group": "DESIGN", "level": 4 },
     { "id": "CE_442", "label": "CE 442", "title": "CE 442", "group": "DESIGN", "level": 4 },
-    { "id": "CE_451", "label": "CE 451", "title": "CE 451", "group": "DESIGN", "level": 4 },
+    { "id": "CE_453", "label": "CE 453", "title": "CE 453", "group": "DESIGN", "level": 4 },
     { "id": "CE_461", "label": "CE 461", "title": "CE 461", "group": "DESIGN", "level": 4 },
     { "id": "CE_471", "label": "CE 471", "title": "CE 471", "group": "CAPSTONE", "level": 4 },
     { "id": "CE_472", "label": "CE 472", "title": "CE 472", "group": "CAPSTONE", "level": 4 }
@@ -79,7 +79,7 @@
 
     {"from": "CE_341", "to": "CE_442", "dashed": false},
 
-    {"from": "CHEM_105", "to": "CE_451", "dashed": false},
+    {"from": "CE_351", "to": "CE_453", "dashed": false},
 
     {"from": "CE_361", "to": "CE_461", "dashed": false},
 
