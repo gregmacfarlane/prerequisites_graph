@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    { "id": "MATH_112", "label": "MATH 112", "title": "MATH 112", "group": "MATH", "level": 1 },
+    { "id": "MATH_113", "label": "MATH 113", "title": "MATH 113", "group": "MATH", "level": 1 },
+    { "id": "MATH_213", "label": "MATH 213", "title": "MATH 213", "group": "MATH", "level": 2 },
+    { "id": "MATH_314", "label": "MATH 314", "title": "MATH 314", "group": "MATH", "level": 3 },
+    { "id": "MATH_334", "label": "MATH 334", "title": "MATH 334", "group": "MATH", "level": 3 },
+    { "id": "STAT_121", "label": "STAT 121", "title": "STAT 121", "group": "SCIENCE", "level": 1 },
+    { "id": "CHEM_105", "label": "CHEM 105", "title": "CHEM 105", "group": "SCIENCE", "level": 1 },
+    { "id": "PHSCS_121", "label": "PHSCS 121", "title": "PHSCS 121", "group": "SCIENCE", "level": 1 },
+    { "id": "CCE_102", "label": "CCE 102", "title": "CCE 102", "group": "CCE", "level": 1 },
+    { "id": "CCE_112_113_114", "label": "CCE 112 / 113 / 114", "title": "CCE 112 / 113 / 114", "group": "CCE", "level": 1 },
+    { "id": "CCE_103", "label": "CCE 103", "title": "CCE 103", "group": "CCE", "level": 1 },
+    { "id": "CCE_270", "label": "CCE 270", "title": "CCE 270", "group": "CCE", "level": 2 },
+    { "id": "CE_271", "label": "CE 271", "title": "CE 271", "group": "CCE", "level": 2 },
+    { "id": "CCE_203", "label": "CCE 203", "title": "CCE 203", "group": "CCE", "level": 2 },
+    { "id": "CE_232", "label": "CE 232", "title": "CE 232", "group": "CCE", "level": 2 },
+    { "id": "CCE_304", "label": "CE 304", "title": "CE 304", "group": "BREADTH", "level": 3 },
+    { "id": "CCE_306", "label": "CE 306", "title": "CE 306", "group": "BREADTH", "level": 3 },
+    { "id": "CE_321", "label": "CE 321", "title": "CE 321", "group": "BREADTH", "level": 3 },
+    { "id": "CE_331", "label": "CE 331", "title": "CE 331", "group": "BREADTH", "level": 3 },
+    { "id": "CE_341", "label": "CE 341", "title": "CE 341", "group": "BREADTH", "level": 3 },
+    { "id": "CE_361", "label": "CE 361", "title": "CE 361", "group": "BREADTH", "level": 3 },
+    { "id": "CE_351", "label": "CE 351", "title": "CE 351", "group": "BREADTH", "level": 3 },
+    { "id": "CE_421", "label": "CE 421", "title": "CE 421", "group": "DESIGN", "level": 4 },
+    { "id": "CE_424", "label": "CE 424", "title": "CE 424", "group": "DESIGN", "level": 4 },
+    { "id": "CE_433", "label": "CE 433", "title": "CE 433", "group": "DESIGN", "level": 4 },
+    { "id": "CE_442", "label": "CE 442", "title": "CE 442", "group": "DESIGN", "level": 4 },
+    { "id": "CE_451", "label": "CE 451", "title": "CE 451", "group": "DESIGN", "level": 4 },
+    { "id": "CE_461", "label": "CE 461", "title": "CE 461", "group": "DESIGN", "level": 4 },
+    { "id": "CE_471", "label": "CE 471", "title": "CE 471", "group": "CAPSTONE", "level": 4 },
+    { "id": "CE_472", "label": "CE 472", "title": "CE 472", "group": "CAPSTONE", "level": 4 }
+  ],
+  "edges": [
+    {"from": "MATH_112", "to": "PHSCS_121", "dashed": true},
+    {"from": "MATH_112", "to": "MATH_113", "dashed": false},
+    {"from": "MATH_112", "to": "MATH_213", "dashed": false},
+    {"from": "MATH_113", "to": "MATH_314", "dashed": false},
+    {"from": "MATH_213", "to": "MATH_334", "dashed": false},
+    {"from": "MATH_112", "to": "CCE_103", "dashed": false},
+    {"from": "CCE_103", "to": "CCE_203", "dashed": false},
+    {"from": "CCE_103", "to": "CE_232", "dashed": false},
+    {"from": "PHSCS_121", "to": "CCE_203", "dashed": false},
+    {"from": "PHSCS_121", "to": "CE_232", "dashed": false},
+    {"from": "CCE_102", "to": "CCE_270", "dashed": false},
+    {"from": "CCE_112_113_114", "to": "CCE_270", "dashed": false},
+    {"from": "CCE_102", "to": "CCE_270", "dashed": false},
+
+    {"from": "CCE_270", "to": "CCE_304", "dashed": false},
+    {"from": "STAT_121", "to": "CCE_304", "dashed": false},
+    {"from": "CCE_203", "to": "CCE_304", "dashed": false},
+
+    {"from": "CCE_270", "to": "CCE_306", "dashed": false},
+    {"from": "STAT_121", "to": "CCE_306", "dashed": false},
+    {"from": "CCE_203", "to": "CCE_306", "dashed": false},
+
+    {"from": "CCE_270", "to": "CE_321", "dashed": false},
+    {"from": "CCE_203", "to": "CE_321", "dashed": false},
+
+    {"from": "CCE_270", "to": "CE_331", "dashed": false},
+    {"from": "CCE_232", "to": "CE_331", "dashed": false},
+
+    {"from": "CCE_270", "to": "CE_341", "dashed": false},
+    {"from": "CCE_232", "to": "CE_341", "dashed": false},
+    {"from": "CCE_203", "to": "CE_341", "dashed": false},
+
+    {"from": "CCE_270", "to": "CE_351", "dashed": false},
+    {"from": "CHEM_105", "to": "CE_351", "dashed": false},
+
+    {"from": "CCE_270", "to": "CE_361", "dashed": false},
+    {"from": "STAT_121", "to": "CE_361", "dashed": false},
+
+    {"from": "CE_304", "to": "CE_421", "dashed": false},
+    {"from": "CE_321", "to": "CE_421", "dashed": false},
+
+    {"from": "CE_306", "to": "CE_424", "dashed": false},
+    {"from": "CE_321", "to": "CE_424", "dashed": false},
+
+    {"from": "CE_232", "to": "CE_433", "dashed": false},
+
+    {"from": "CE_341", "to": "CE_442", "dashed": false},
+
+    {"from": "CHEM_105", "to": "CE_451", "dashed": false},
+
+    {"from": "CE_361", "to": "CE_461", "dashed": false},
+
+    {"from": "CCE_304", "to": "CE_472", "dashed": true},
+    {"from": "CCE_306", "to": "CE_472", "dashed": true},
+    {"from": "CE_321", "to": "CE_472", "dashed": true},
+    {"from": "CE_331", "to": "CE_472", "dashed": true},
+    {"from": "CE_341", "to": "CE_472", "dashed": true},
+    {"from": "CE_351", "to": "CE_472", "dashed": true},
+    {"from": "CE_361", "to": "CE_472", "dashed": true},
+
+    {"from": "CE_421", "to": "CE_472", "dashed": true},
+    {"from": "CE_424", "to": "CE_472", "dashed": true},
+    {"from": "CE_433", "to": "CE_472", "dashed": true},
+    {"from": "CE_442", "to": "CE_472", "dashed": true},
+    {"from": "CE_451", "to": "CE_472", "dashed": true},
+    {"from": "CE_461", "to": "CE_472", "dashed": true}
+
+
+
+  ],
+  "legend": [
+    { "group": "MATH", "label": "Mathematics", "color": "#4E79A7" },
+    { "group": "SCIENCE", "label": "Science and statistics", "color": "#59A14F" },
+    { "group": "CCE", "label": "CCE Foundations", "color": "#B07AA1" },
+    { "group": "BREADTH", "label": "CE Breadth", "color": "#76B7B2" },
+    { "group": "DESIGN", "label": "CE Design", "color": "#E15759" },
+    { "group": "CAPSTONE", "label": "CE Capstone", "color": "#EDC948" }
+  ]
+}
