@@ -13,7 +13,7 @@
     { "id": "CCE_103", "label": "CCE 103", "title": "CCE 103", "group": "CCE", "level": 1 },
     { "id": "CCE_270", "label": "CCE 270", "title": "CCE 270", "group": "CCE", "level": 2 },
     { "id": "CCE_203", "label": "CCE 203", "title": "CCE 203", "group": "CCE", "level": 2 },
-    { "id": "CE_232", "label": "CE 232", "title": "CE 232", "group": "CE", "level": 2 },
+    { "id": "CE_232", "label": "CE 232", "title": "CE 232", "group": "CCE", "level": 2 },
     { "id": "CCE_304", "label": "CE 304", "title": "CE 304", "group": "BREADTH", "level": 3 },
     { "id": "CCE_306", "label": "CE 306", "title": "CE 306", "group": "BREADTH", "level": 3 },
     { "id": "CE_321", "label": "CE 321", "title": "CE 321", "group": "BREADTH", "level": 3 },
@@ -97,10 +97,9 @@
   "legend": [
     { "group": "MATH", "label": "Mathematics", "color": "#4E79A7" },
     { "group": "SCIENCE", "label": "Science and statistics", "color": "#59A14F" },
-    { "group": "CCE", "label": "CCE courses", "color": "#F28E2B" },
-    { "group": "CE", "label": "Core CE", "color": "#B07AA1" },
-    { "group": "BREADTH", "label": "CE breadth", "color": "#76B7B2" },
-    { "group": "DESIGN", "label": "CE design", "color": "#E15759" },
-    { "group": "CAPSTONE", "label": "CE capstone", "color": "#EDC948" }
+    { "group": "CCE", "label": "CCE Foundations", "color": "#B07AA1" },
+    { "group": "BREADTH", "label": "CE Breadth", "color": "#76B7B2" },
+    { "group": "DESIGN", "label": "CE Design", "color": "#E15759" },
+    { "group": "CAPSTONE", "label": "CE Capstone", "color": "#EDC948" }
   ]
 }
