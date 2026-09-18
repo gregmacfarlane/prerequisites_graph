@@ -21,6 +21,7 @@ edges <- data.frame(
   from = graph$edges$from,
   to = graph$edges$to,
   arrows = "to",
+  dashes = graph$edges$dashed,
   stringsAsFactors = FALSE
 )
 

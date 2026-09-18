@@ -31,66 +31,67 @@
     { "id": "CE_472", "label": "CE 472", "title": "CE 472", "group": "CAPSTONE", "level": 4 }
   ],
   "edges": [
-    {"from": "MATH_112", "to": "MATH_113"},
-    {"from": "MATH_112", "to": "MATH_213"},
-    {"from": "MATH_113", "to": "MATH_314"},
-    {"from": "MATH_213", "to": "MATH_334"},
-    {"from": "MATH_112", "to": "CCE_103"},
-    {"from": "CCE_103", "to": "CCE_203"},
-    {"from": "CCE_103", "to": "CE_232"},
-    {"from": "PHSCS_121", "to": "CCE_203"},
-    {"from": "PHSCS_121", "to": "CE_232"},
-    {"from": "CCE_102", "to": "CCE_270"},
-    {"from": "CCE_112_113_114", "to": "CCE_270"},
-    {"from": "CCE_102", "to": "CCE_270"},
+    {"from": "MATH_112", "to": "PHSCS_121", "dashed": true},
+    {"from": "MATH_112", "to": "MATH_113", "dashed": false},
+    {"from": "MATH_112", "to": "MATH_213", "dashed": false},
+    {"from": "MATH_113", "to": "MATH_314", "dashed": false},
+    {"from": "MATH_213", "to": "MATH_334", "dashed": false},
+    {"from": "MATH_112", "to": "CCE_103", "dashed": false},
+    {"from": "CCE_103", "to": "CCE_203", "dashed": false},
+    {"from": "CCE_103", "to": "CE_232", "dashed": false},
+    {"from": "PHSCS_121", "to": "CCE_203", "dashed": false},
+    {"from": "PHSCS_121", "to": "CE_232", "dashed": false},
+    {"from": "CCE_102", "to": "CCE_270", "dashed": false},
+    {"from": "CCE_112_113_114", "to": "CCE_270", "dashed": false},
+    {"from": "CCE_102", "to": "CCE_270", "dashed": false},
 
-    {"from": "CCE_270", "to": "CCE_304"},
-    {"from": "STAT_121", "to": "CCE_304"},
-    {"from": "CCE_203", "to": "CCE_304"},
+    {"from": "CCE_270", "to": "CCE_304", "dashed": false},
+    {"from": "STAT_121", "to": "CCE_304", "dashed": false},
+    {"from": "CCE_203", "to": "CCE_304", "dashed": false},
 
-    {"from": "CCE_270", "to": "CCE_306"},
-    {"from": "STAT_121", "to": "CCE_306"},
-    {"from": "CCE_203", "to": "CCE_306"},
+    {"from": "CCE_270", "to": "CCE_306", "dashed": false},
+    {"from": "STAT_121", "to": "CCE_306", "dashed": false},
+    {"from": "CCE_203", "to": "CCE_306", "dashed": false},
 
-    {"from": "CCE_270", "to": "CE_321"},
-    {"from": "CCE_203", "to": "CE_321"},
+    {"from": "CCE_270", "to": "CE_321", "dashed": false},
+    {"from": "CCE_203", "to": "CE_321", "dashed": false},
 
-    {"from": "CCE_270", "to": "CE_331"},
-    {"from": "CCE_232", "to": "CE_331"},
+    {"from": "CCE_270", "to": "CE_331", "dashed": false},
+    {"from": "CCE_232", "to": "CE_331", "dashed": false},
 
-    {"from": "CCE_270", "to": "CE_341"},
-    {"from": "CCE_232", "to": "CE_341"},
-    {"from": "CCE_203", "to": "CE_341"},
+    {"from": "CCE_270", "to": "CE_341", "dashed": false},
+    {"from": "CCE_232", "to": "CE_341", "dashed": false},
+    {"from": "CCE_203", "to": "CE_341", "dashed": false},
 
-    {"from": "CCE_270", "to": "CE_351"},
-    {"from": "CHEM_105", "to": "CE_351"},
+    {"from": "CCE_270", "to": "CE_351", "dashed": false},
+    {"from": "CHEM_105", "to": "CE_351", "dashed": false},
 
-    {"from": "CCE_270", "to": "CE_361"},
-    {"from": "STAT_121", "to": "CE_361"},
+    {"from": "CCE_270", "to": "CE_361", "dashed": false},
+    {"from": "STAT_121", "to": "CE_361", "dashed": false},
 
-    {"from": "CE_304", "to": "CE_421"},
-    {"from": "CE_321", "to": "CE_421"},
+    {"from": "CE_304", "to": "CE_421", "dashed": false},
+    {"from": "CE_321", "to": "CE_421", "dashed": false},
 
-    {"from": "CE_306", "to": "CE_424"},
-    {"from": "CE_321", "to": "CE_424"},
+    {"from": "CE_306", "to": "CE_424", "dashed": false},
+    {"from": "CE_321", "to": "CE_424", "dashed": false},
 
-    {"from": "CE_232", "to": "CE_433"},
+    {"from": "CE_232", "to": "CE_433", "dashed": false},
 
-    {"from": "CE_341", "to": "CE_442"},
+    {"from": "CE_341", "to": "CE_442", "dashed": false},
 
-    {"from": "CHEM_105", "to": "CE_451"},
+    {"from": "CHEM_105", "to": "CE_451", "dashed": false},
 
-    {"from": "CE_361", "to": "CE_461"},
+    {"from": "CE_361", "to": "CE_461", "dashed": false},
 
-    {"from": "CCE_304", "to": "CE_471"},
-    {"from": "CCE_306", "to": "CE_471"},
-    {"from": "CE_321", "to": "CE_471"},
-    {"from": "CE_331", "to": "CE_471"},
-    {"from": "CE_341", "to": "CE_471"},
-    {"from": "CE_351", "to": "CE_471"},
-    {"from": "CE_361", "to": "CE_471"},
+    {"from": "CCE_304", "to": "CE_471", "dashed": true},
+    {"from": "CCE_306", "to": "CE_471", "dashed": true},
+    {"from": "CE_321", "to": "CE_471", "dashed": true},
+    {"from": "CE_331", "to": "CE_471", "dashed": true},
+    {"from": "CE_341", "to": "CE_471", "dashed": true},
+    {"from": "CE_351", "to": "CE_471", "dashed": true},
+    {"from": "CE_361", "to": "CE_471", "dashed": true},
 
-    {"from": "CE_471", "to": "CE_472"}
+    {"from": "CE_471", "to": "CE_472", "dashed": false}
 
 
   ],
